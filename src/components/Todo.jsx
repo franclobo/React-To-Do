@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 function Todo(props) {
   const { todo } = props;
+  
   return (
     <div>
       <form className="todo-form">
@@ -14,7 +15,7 @@ function Todo(props) {
 }
 
 Todo.propTypes = {
-  todo: PropTypes.string,
+  todo: PropTypes.string.isRequired,
 };
 
 export default Todo;
